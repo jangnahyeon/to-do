@@ -5,6 +5,7 @@ import { Masthead } from './Masthead';
 import { Features } from './Features';
 import { PageWrapper } from 'app/components/PageWrapper';
 import styled from 'styled-components';
+import TodoInput from './components/TodoInput';
 
 const Wrapper = styled.div`
   width: 100%;
@@ -53,6 +54,7 @@ export function HomePage() {
       <Wrapper>
         <Box>
           <Title>할 일</Title>
+          <TodoInput></TodoInput>
           <TodoList>
             <TodoItem>
               <TodoCheck type="checkbox" />
