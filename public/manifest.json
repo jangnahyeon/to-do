@@ -1,5 +1,7 @@
+//Todo앱 관련 내용으로 변경
 {
-  "short_name": "React App",
+  // 모바일 앱으로 설치하였을때의 앱 이름
+  "short_name": "To-do",
   "name": "Create React App Sample",
   "icons": [
     {
@@ -20,6 +22,7 @@
   ],
   "start_url": ".",
   "display": "standalone",
-  "theme_color": "#000000",
+  // 이 앱의 테마색을 설정
+  "theme_color": "#ff0000",
   "background_color": "#ffffff"
 }
