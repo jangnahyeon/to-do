@@ -6,6 +6,7 @@ import { Features } from './Features';
 import { PageWrapper } from 'app/components/PageWrapper';
 import styled from 'styled-components';
 import TodoInput from './components/TodoInput';
+import TodoItem from './components/TodoItem';
 
 const Wrapper = styled.div`
   width: 100%;
@@ -30,15 +31,6 @@ const Title = styled.h1`
 
 const TodoList = styled.div``;
 
-const TodoItem = styled.div`
-  display: flex;
-  align-item: center;
-  padding: 15px 25px;
-  width: 100%;
-  font-size: 1.2em;
-  border-bottom: 1px solid #eee;
-`;
-
 const TodoCheck = styled.input`
   margin-right: 15px;
 `;
@@ -56,10 +48,30 @@ export function HomePage() {
           <Title>할 일</Title>
           <TodoInput></TodoInput>
           <TodoList>
-            <TodoItem>
-              <TodoCheck type="checkbox" />
-              나는 투두야
-            </TodoItem>
+            <TodoItem
+              todo={{
+                id: '1',
+                completed: false,
+                content: '투두 입니다 1',
+                editing: false,
+              }}
+            ></TodoItem>
+            <TodoItem
+              todo={{
+                id: '1',
+                completed: true,
+                content: '투두 입니다 1',
+                editing: false,
+              }}
+            ></TodoItem>
+            <TodoItem
+              todo={{
+                id: '1',
+                completed: false,
+                content: '투두 입니다 1',
+                editing: false,
+              }}
+            ></TodoItem>
           </TodoList>
         </Box>
       </Wrapper>

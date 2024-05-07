@@ -4,7 +4,7 @@ interface ITodoItemContent {
   content: string;
 }
 
-interface TodoItem extends ITodoItemContent {
+interface ITodoItem extends ITodoItemContent {
   id: string;
   completed: boolean;
   editing: boolean;
